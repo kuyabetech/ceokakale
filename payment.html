@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Kakale Payment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #ffffff;
+            background: #1a1a1a;
+        }
+
+        header {
+            background: #000000;
+            color: #ffffff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem;
+        }
+
+        nav ul li a:hover {
+            color: #d4a017;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 80px auto 0;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #d4a017;
+            text-align: center;
+        }
+
+        .payment-details {
+            background: #2c2c2c;
+            padding: 1.5rem;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .payment-details p {
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-button {
+            background: #d4a017;
+            color: #000000;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .whatsapp-button:hover {
+            background: #ffffff;
+        }
+
+        .whatsapp-button img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+
+        footer {
+            background: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        footer a {
+            color: #d4a017;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .social-icons {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 0.5rem;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #000000;
+                padding: 1rem;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CEO Kakale</div>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#why-choose">Why Choose Kakale</a></li>
+                <li><a href="index.html#market-reach">Market Reach</a></li>
+                <li><a href="index.html#innovation">Innovation</a></li>
+                <li><a href="index.html#sustainability">Sustainability</a></li>
+                <li><a href="index.html#visit-us">Visit Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="payment">
+        <h2>Payment Information</h2>
+        <div class="payment-details">
+            <p><strong>Bank Name:</strong> Zenith Bank</p>
+            <p><strong>Account Name:</strong> CEO Kakale Limited</p>
+            <p><strong>Account Number:</strong> 1234567890</p>
+            <p><strong>Branch:</strong> Lagos, Nigeria</p>
+            <p>Please make payments to the above account and send proof of payment via WhatsApp for confirmation.</p>
+            <a href="https://wa.me/+2341234567890?text=Payment%20Proof%20for%20CEO%20Kakale%20Order" target="_blank" class="whatsapp-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Send Proof via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 CEO Kakale. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@ceokakale.com">info@ceokakale.com</a> | 
+           <a href="https://wa.me/+2341234567890" target="_blank">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle;">
+           </a>
+        </p>
+        <p>Developed by <a href="mailto:kverifydigitalsolutions@gmail.com">Kverify Digital Solutions</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
